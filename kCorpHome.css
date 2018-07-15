@@ -1,0 +1,161 @@
+body {
+  width: 98%;
+  text-align: center;
+  background: transparent;
+  color: silver}
+canvas {
+  background: transparent;
+  position: absolute;
+  left: 0px;
+  z-index: 1}
+#all {
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+  }
+#content, #feature {
+  color: navy;
+  margin: .5%;
+  text-align: center;
+  background: rgba(12,12,12,0.2);
+  }
+#feature, .column1,
+#content, .column2, .column3, .ktest {
+  border-color: black;
+  border-style: double;
+  border-width: 5px;}
+#feature {
+  height: 470px;
+  margin-bottom: auto;
+  background: transparent;
+  font-size: 110%;}
+.column1, .column2, .column3 {
+  display: inline-block;
+  height: 250px;
+  width: 31.5%;
+  margin: .5%;}
+#out,#out2,#out3,#out4 {
+  font-family: monospace;
+  margin: 0 auto;
+  height: 180px;
+  width: 325px;
+  overflow: auto;}
+.column3 {
+  margin-right: 0%;}
+.column1 {
+  margin-left: 0%;}
+.ktest {
+  border: none;
+  height: 250px;
+  display: inline-block;
+  padding: 5px;
+  text-align: left;
+  width: 66.6%;}
+img {
+  float: right;}
+.menuHolder {
+  width: 98%; 
+  margin: 0 auto; 
+  padding: 20px 0; 
+  text-align: center; 
+  background: transparent;
+  border-radius: 20px;}
+ul.fancy {
+  padding: 0; 
+  margin: 0 auto; 
+  list-style: none; 
+  display: inline-block; 
+  font-family: arial, sans-serif; 
+  font-size: 13px;
+  height: 54px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);}
+ul.fancy li {
+  display: inline;}
+ul.fancy li a {
+  background-color: #AD2130; 
+  border: 1px solid #012;
+  display: block; 
+  padding: 0 25px; 
+  height: 52px; 
+  line-height: 50px; 
+  text-decoration: none; 
+  color: #fff; 
+  float: left; 
+  margin-right: -1px; 
+  text-align: center; 
+  height: 52px; 
+  font-weight: normal;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, rgba(255, 255, 255, 0.7)), color-stop(0.5, rgba(255, 255, 255, 0.2)),
+                    color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.3)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0, rgba(255, 255, 255, 0.2) 50%, transparent 50%, rgba(255, 255, 255, 0.3) 100%);
+  background-image: -ms-linear-gradient( top, rgba(255, 255, 255, 0.7) 0, rgba(255, 255, 255, 0.2) 50%, transparent 50%, rgba(255, 255, 255, 0.3) 100%);
+  background-image: -o-linear-gradient(  top, rgba(255, 255, 255, 0.7) 0, rgba(255, 255, 255, 0.2) 50%, transparent 50%, rgba(255, 255, 255, 0.3) 100%);
+  background-image: linear-gradient(     top, rgba(255, 255, 255, 0.7) 0, rgba(255, 255, 255, 0.2) 50%, transparent 50%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-box-shadow: inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 1px 0 1px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4);
+    -moz-box-shadow: inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 1px 0 1px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4);
+      box-shadow: inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 1px 0 1px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4);
+        text-shadow: 1px -1px 1px #000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;}
+ul.fancy li:first-child a {
+  border-radius: 10px 0 0 10px;}
+ul.fancy li:last-child a {
+  border-radius: 0 10px 10px 0;}
+ul.fancy li a:active {
+  line-height: 52px;
+  color: red;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0)), 
+                    color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 50%, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 50%, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 50%, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 50%, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.4), inset 1px 0 1px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.4), inset 1px 0 1px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.4);
+      box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.4), inset 1px 0 1px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.4);}
+li a#selected {
+  line-height: 52px;
+  color: cornflowerblue;}
+li {
+  list-style-type: none;}
+  
+#outer {
+  width: 1000px;
+  height: 540px;
+  margin: 0 auto;
+  padding: 20px;
+  border-style: inset;
+  border-color: hotpink;
+  border-width: 15px;
+  text-align: center;
+  background: black}
+#Kstyle {
+  width: 950px;
+  height: 490px;
+  margin: 0 auto;
+  padding: 5px;
+  border-style: inset;
+  border-color: hotpink;
+  border-width: 15px}
+table{
+  width: 100%;}
+th {
+  text-align: right;}
+input{
+  width: 120px;}
+#in {
+  width: 120px;}
+fieldset {
+  background: peachpuff;
+  color: cornflowerblue;
+  width: 80%;
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 12px;
+  text-align: left;
+  padding: 10px;
+  
+  }
