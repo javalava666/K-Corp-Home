@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>K-Corp Home</title>
+    <link rel="stylesheet" href="kCorpHome.css">
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1250" height="900"></canvas>
+    <div id="all">
+      <div id="header">
+        <ul class="fancy">
+          <li><a href="kCorpHome.html" id="selected">   Home          </a></li>
+          <li><a href="kTest.html">                     Prime?        </a></li>
+          <li><a href="kCycle.html">                    Full K-Cycle  </a></li>
+          <li><a href="wheel.html">                     Fate          </a></li>
+          <li><a href="primeGenerator.html">            Prime Range   </a></li>
+          <li><a href="theyFactor.html">                Got Factors?  </a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="feature">
+          <h3><button id="animateButton" onclick="animate()"></button>
+          <b>K-Test</b> (a new primality test by K-Corp)
+          <button id="speedUp" onclick="speedUp()"></button>
+          </h3>
+          <p>
+            <b>K-Test</b> is a <em>primality test</em>. <b>It is not to be
+            confused with a compositeness test.</b> We can perform a <b>K-Test</b>
+            for primality on any <em>odd number</em> between 3 and a number as
+            large as your device will allow. Input a number fitting the above
+            description into the text box below and press the button labeled 
+            "<b>K-Test</b> It."
+          </p>
+          <div id="info" class="ktest">
+            <input id="in" type="number">
+              <p><button onclick="kTest(document.getElementById('in').value*1)"><b>K-Test</b> It</button></p>
+            <div id="out">
+              <p>Answer will appear here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="article column1">
+          <h3>K-Cycles<a href="kCycle.html">Need More Space?</a></h3>
+          <div>
+            <input id="in1" type="number"/><button onclick="createAllOrbits(document.getElementById('in1').value*1)">Create K-Cycle</button>
+          </div>
+          <div id="out2">
+            Orbits:
+          </div>
+        </div>
+        <div class="article column2">
+          <h3>K-Factor<a href="kFactor.html">Need More Space?</a></h3>
+          <div>
+            <input id="in2" type="number"/><button onclick="kFactor(document.getElementById('in2').value*1)">KFactor It</button>
+          </div>
+          <div id="out3">
+            Factors:
+          </div>
+        </div>
+        <div class="article column3">
+          <h3>K-Cycle (data)<a href="kCycleData.html">Need More Space?</a></h3>
+          <div>
+            <input id="in3" type="number"/><button onclick="getCycleData(document.getElementById('in3').value*1)">Get K-Cycle Data</button>
+          </div>
+          <div id="out4">
+            Data:
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="kCorpHome.js"></script>
+</html>
